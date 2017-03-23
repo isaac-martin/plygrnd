@@ -1,0 +1,89 @@
+@import "reset";
+@import "mq";
+@import "animations";
+@import "fonts";
+
+
+$grey: #191414;
+
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+
+  @include phone {
+    font-size: 62.5%;
+  }
+}
+
+body {
+    background-color: #fbfbf8;
+    font-family: $font-reg;
+    color: $grey;
+    text-align: left;
+
+    a {
+        color: $grey;
+        border-bottom: 2px solid;
+        text-decoration: none;
+        display: inline-block;
+          padding-bottom: 5px;
+          transition: all .5s ease;
+          transform: translateY(0);
+        &:hover {
+            transform: translateY(-8px);
+
+        }
+
+
+    }
+}
+
+h1 {
+  font-size: 5rem;
+font-weight: normal;
+border-bottom: 3px solid;
+padding-bottom: 20px;
+width: 50%;
+
+}
+
+
+.container {
+    display: flex;
+     flex-direction: row;
+     padding: 30px;
+
+     @include phone {
+       padding: 20px;
+     }
+}
+
+
+.col-left {
+    flex:1
+}
+
+
+
+#content-wrapper {
+    position: relative;
+    padding: 60px;
+
+    @include phone-tablet {
+    padding: 30px 0 0 0;
+    }
+}
+
+
+p.intro {
+    font-size: 4rem;
+    line-height: 4.3rem;
+    text-align: left;
+    margin: 0;
+    width: 80%;
+
+    @include sml-desktop-down {
+      width: 100%;
+    }
+}

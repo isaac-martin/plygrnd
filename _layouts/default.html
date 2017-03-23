@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include head.html %}
+</head>
+    <body>
+      <div class="m-scene" id="main">
+          <div class="container">
+            <div id="content-wrapper" class="col-left scene_element scene_element--fadeinup">
+                   {{ content }}
+            </div>
+         </div>
+  </div><!-- End #main -->
+   {% include body-scripts.html %} <!-- this will paste in all of the scripts you want before the closing body tag -->
+    </body>
+</html>
