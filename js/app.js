@@ -44,7 +44,8 @@ client.extendEvents(function(){
 			browser: Keen.helpers.getBrowserProfile(),
 			// info: {} (add-on)
 			ip: '${keen.ip}',
-			ua: '${keen.user_agent}'
+			ua: '${keen.user_agent}',
+			windowprofile: Keen.helpers.getWindowProfile();
 		},
 		time: Keen.helpers.getDatetimeIndex(),
 		visitor: {
